@@ -50,8 +50,8 @@ public class RezervaceServlet extends HttpServlet {
         String Aname = fname.concat(lname);
         String subject = "Objednávka";
         String message =  request.getParameter("message");
-        String user = "jarkohros@gmail.com";
-        String pass = "radikalpociatok";
+        String user = "mail";
+        String pass = "psswd";
         con = DBcon.createConnection();
         String query = "insert into rezervace (Jmeno, Email, Mobil) values (?,?,?)";
         
